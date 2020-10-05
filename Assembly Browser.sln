@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyInformation", "GetA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionClasses", "ExtensionClasses\ExtensionClasses.csproj", "{E56FD814-BBB3-4671-A4D0-00C4985746A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowser.Tests", "TestAssemblyBrowser\AssemblyBrowser.Tests.csproj", "{893A12DF-30E8-45FF-81FF-ADAE01EF660A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E56FD814-BBB3-4671-A4D0-00C4985746A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E56FD814-BBB3-4671-A4D0-00C4985746A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E56FD814-BBB3-4671-A4D0-00C4985746A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{893A12DF-30E8-45FF-81FF-ADAE01EF660A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893A12DF-30E8-45FF-81FF-ADAE01EF660A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893A12DF-30E8-45FF-81FF-ADAE01EF660A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893A12DF-30E8-45FF-81FF-ADAE01EF660A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
