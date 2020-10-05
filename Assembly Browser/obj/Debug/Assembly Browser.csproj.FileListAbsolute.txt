@@ -1,0 +1,19 @@
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\bin\Debug\Assembly Browser.exe.config
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\bin\Debug\Assembly Browser.exe
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\bin\Debug\Assembly Browser.pdb
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser.csprojAssemblyReference.cache
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\App.g.cs
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser_MarkupCompile.cache
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser_MarkupCompile.lref
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser.g.resources
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly_Browser.Properties.Resources.resources
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser.csproj.GenerateResource.cache
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser.csproj.CoreCompileInputs.cache
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser.exe
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser.pdb
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\bin\Debug\AssemblyInformation.dll
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\bin\Debug\AssemblyInformation.pdb
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Assembly Browser.csproj.CopyComplete
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Views\MainWindow.g.cs
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\Views\MainWindow.baml
+D:\Лабы 5 сем\CПП\Assembly Browser\Assembly Browser\obj\Debug\GeneratedInternalTypeHelper.g.cs
