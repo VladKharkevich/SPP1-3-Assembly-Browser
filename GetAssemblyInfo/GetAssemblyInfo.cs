@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using System.Runtime.CompilerServices;  
 using System.Reflection;
 
 namespace AssemblyInformation
@@ -17,13 +19,13 @@ namespace AssemblyInformation
         {
             foreach (AssemblyNamespace assemblyNamespace in assemblyResult.AssemblyNamespaces)
             {
-                if (type.Namespace == null)
+                if (type.Namespace == null || assemblyNamespace.Namespace == null)
                 {
                     return null;
                 }
                 else if (assemblyNamespace.Namespace.Equals(type.Namespace))
                     {
-                         return assemblyNamespace;
+                            return assemblyNamespace;
                     }
             }
             AssemblyNamespace tempNamespace = new AssemblyNamespace();
@@ -40,8 +42,38 @@ namespace AssemblyInformation
             return assemblyType;
         }
 
-        private void FillInformationInAssemblyType(AssemblyType assemblyType, Type type)
+        static IEnumerable<MethodInfo> GetExtensionMethods(Assembly assembly,
+        Type extendedType)
         {
+            var query = from type in assembly.GetTypes()
+                        where type.IsSealed && !type.IsGenericType && !type.IsNested
+                        from method in type.GetMethods(BindingFlags.Static
+                            | BindingFlags.Public | BindingFlags.NonPublic)
+                        where method.IsDefined(typeof(ExtensionAttribute), false)
+                        where method.GetParameters()[0].ParameterType == extendedType
+                        select method;
+            return query;
+        }
+
+        private void FillInformationInAssemblyType(Assembly assembly, AssemblyType assemblyType, Type type)
+        {
+            foreach (MethodInfo methodInfo in GetExtensionMethods(assembly, type))
+            {
+                string methodName = "$Extended$ " + methodInfo.Name;
+                methodName += "(";
+                bool haveParameters = false;
+                foreach (ParameterInfo parameter in methodInfo.GetParameters())
+                {
+                    haveParameters = true;
+                    methodName += parameter.ParameterType.Name + " " + parameter.Name + ", ";
+                }
+                if (haveParameters)
+                    methodName = methodName.Substring(0, methodName.Length - 2);
+                methodName += ")";
+                AssemblyMethod assemblyMethod = new AssemblyMethod();
+                assemblyMethod.Name = methodName;
+                assemblyType.AssMethods.Add(assemblyMethod);
+            }
             foreach (MethodInfo methodInfo in type.GetMethods())
             {
                 string methodName = methodInfo.Name;
@@ -114,7 +146,7 @@ namespace AssemblyInformation
                 if (assemblyNamespace != null)
                 {
                     AssemblyType assemblyType = GetAssemblyType(assemblyNamespace, type);
-                    FillInformationInAssemblyType(assemblyType, type);
+                    FillInformationInAssemblyType(assembly, assemblyType, type);
                 }
             }
             SortAssemblyResult(assemblyResult);

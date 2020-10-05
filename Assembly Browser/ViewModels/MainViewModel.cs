@@ -83,6 +83,10 @@ namespace Assembly_Browser.ViewModels
 				}
 				lAssemblyName = Result.AssemblyName;
 			}
+			catch (System.BadImageFormatException)
+            {
+				MessageBox.Show("This is not .NET assembly!!!!");
+			}
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.ToString());

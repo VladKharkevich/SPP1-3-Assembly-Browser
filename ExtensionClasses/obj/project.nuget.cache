@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dV+hlq8XCWSkwT9Eb/pjqVHiehO9AgTZYtL9RA83pkEoXq/Nla8dTs+h8gr7k4QE7BqYMPmzITw+HOeDd0Qi7A==",
+  "success": true,
+  "projectFilePath": "D:\\Лабы 5 сем\\CПП\\Assembly Browser\\ExtensionClasses\\ExtensionClasses.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\khark\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\khark\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
